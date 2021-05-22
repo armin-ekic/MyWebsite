@@ -1,0 +1,11 @@
+<html t:type="layout" title="Review | arekicWebsite"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+
+<body class="container">
+    <div class="eg">
+    	<t:beandisplay object="userAccount" include="name,emailAddress,userID"/>    
+        <t:pagelink page="Index" class="btn btn-default">Cancel</t:pagelink>
+    </div>
+</body>
+</html>

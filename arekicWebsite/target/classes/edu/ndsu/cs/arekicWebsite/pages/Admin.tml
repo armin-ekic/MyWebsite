@@ -1,0 +1,11 @@
+<html t:type="layout" title="Admin | arekicWebsite"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+
+<div class="row">
+    <div class="span12">
+        <h1>You think you are special because you  are an admin?</h1>
+        <p>There is nothing to see here, you don't get any special priviliges in MY webpage.</p>
+    </div>
+</div>
+</html>

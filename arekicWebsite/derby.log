@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Tue Oct 13 15:24:43 CDT 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-0175-23a2-f5b9-00000c665e60 
+on database directory memory:C:\Users\aekic\Desktop\CSCI413git\MyWebsite\arekicWebsite\testdb with class loader java.net.URLClassLoader@3c770db4 
+Loaded from file:/C:/Users/aekic/.m2/repository/org/apache/derby/derby/10.13.1.1/derby-10.13.1.1.jar
+java.vendor=Azul Systems, Inc.
+java.runtime.version=11.0.8+10-LTS
+user.dir=C:\Users\aekic\Desktop\CSCI413git\MyWebsite\arekicWebsite
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

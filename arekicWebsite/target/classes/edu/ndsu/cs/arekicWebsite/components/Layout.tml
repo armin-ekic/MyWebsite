@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
+<head>
+    <meta charset="utf-8"/>
+    <title>${title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <link rel="shortcut icon" href="${asset:context:/favicon.ico}"/>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<t:security.authenticated>
+						<li><t:pagelink page="MyAccount">MyAccount</t:pagelink></li>
+					</t:security.authenticated>
+					<t:security.hasrole role="Admin">
+						<li><t:pagelink page="Admin">Admin</t:pagelink></li>
+					</t:security.hasrole>
+					<t:loop source="pageNames" value="pageName">
+			       		<t:any element="li" class="prop:classForPageName">
+							<t:pagelink page="prop:pageName">${pageName}</t:pagelink>
+						</t:any>
+					</t:loop>
+				</ul>
+				<span class="navbar-right"><li>
+					<t:security.notauthenticated>
+						<t:pagelink page="login" class="btn btn-default navbar-btn">Log In</t:pagelink>
+					</t:security.notauthenticated>
+					<t:security.authenticated>
+						<t:pagelink page="logout" class="btn btn-default navbar-btn">Log Out</t:pagelink>
+					</t:security.authenticated>
+				</li></span>
+				</div><!--/.nav-collapse -->     
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span12">
+            <t:alerts/>
+        </div>
+    </div>
+    <div class="row">
+        <t:body />
+        <hr />
+        <footer>
+            <p>&copy; Your Company ${year}</p>
+        </footer>
+    </div>
+</div>
+
+</body>
+</html>

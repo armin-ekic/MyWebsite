@@ -1,0 +1,25 @@
+<html t:type="layout" title="About | arekicWebsite"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+
+<div class="row">
+    <div class="span12">
+        <h1>About Armin's web application ...</h1>
+        <p>This webpage is about some books I like and have read in the past, as well as some neat information about them.</p>
+        <p>You will learn how long some of my favorite books are, who wrote them, and when they were released. I hope you enjoy!</p>
+    </div>
+</div>
+
+<t:if test="learn">
+    <div class="row">
+        <div class="span12">
+            <p>
+                To learn more go to
+                <a href="https://tapestry.apache.org">Tapestry home</a>
+                and start typing...
+            </p>
+        </div>
+    </div>
+</t:if>
+
+</html>
